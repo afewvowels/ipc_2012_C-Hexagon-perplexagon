@@ -1,0 +1,28 @@
+while(istream) {
+  for(int i = 0; i < 7; i++){
+    vector<vector<int>> pieces[i][0] = i
+    vector<vector<int>> pieces[i][1-6] = istream
+  }
+
+  next_permutation(pieces.begin(), pieces.end()) {
+    int offset
+
+    for(int i = 1; i < 7; i++)
+      if(pieces[i] = 1)
+        offset = i
+
+    for(int i = 0; i < 7; i++) {
+      if(1 <= i <= 3) {
+        if(pieces[i][7 % offset] == pieces[i + 1][7 % offset + 3])
+          continue
+        else
+          break
+      } else if (4 <= i <= 6) {
+        if(pieces[i][7 % offset] == pieces[i + 1][7 % offset - 3])
+          continue
+        else
+          break
+      }
+    }
+  }
+}

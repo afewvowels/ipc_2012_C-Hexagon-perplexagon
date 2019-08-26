@@ -1,0 +1,9 @@
+#1 read data from file into vector of vectors, with the vectors holding the #'s of each hexagon will have 7 values, 1 (for original placement in array) + 6 (for #'s on the sides of the hexagon)
+
+#2 adjust piece 0 so that 1 is at the top of the piece, keep track of the offset, and apply the offset to all other pieces
+
+#3 check all permutations with this orientation, if reach the end of comparisons, terminate program and write order of pieces to file (vector[0]);
+
+#4 repeat #2-#3 for each permutation of pieces in the provided input dataset while condition is false
+
+#5 if this step is reached, no solution
