@@ -3,30 +3,43 @@ while(istream) {
     vector<vector<int>> pieces[i][0] = i
     vector<vector<int>> pieces[i][1-6] = istream
   }
+}
 
-  next_permutation(pieces.begin(), pieces.end()) {
-    int offset
+next_permutation(pieces.begin(), pieces.end()) {
+  int offset
 
-    for(int i = 1; i < 7; i++)
-      if(pieces[i] = 1)
-        offset = i
+  for(int i = 1; i < 7; i++)
+    if(pieces[i] = 1)
+      offset = i
 
-    // Loop through each of the 7 pieces
-    for(int piece = 0; piece < 7; piece++) {
-      // Loop through each of the 8 sides of one piece and its adjacent piece
-      for(int side = 0; side < 8; side++) {
-        if(1 <= piece <= 3) {
-          if(pieces[i][7 % offset + 1 + side] == pieces[i + 1][7 % offset + 3 + 1 + side])
-            continue
-          else
-            break
-        } else if (4 <= piece <= 6) {
-          if(pieces[i][7 % offset + 1] == pieces[i + 1][7 % offset - 3 + 1])
-            continue
-          else
-            break
-        }
+  // Loop through each of the 7 pieces
+  for(int piece = 0; piece < 7; piece++) {
+    // Loop through each of the 8 sides of one piece and its adjacent piece
+    for(int side = 0; side < 8; side++) {
+      if(1 <= piece <= 3) {
+        if(pieces[i][7 % offset + 1 + side] == pieces[i + 1][7 % offset + 3 + 1 + side])
+          continue
+        else
+          break
+      } else if (4 <= piece <= 6) {
+        if(pieces[i][7 % offset + 1] == pieces[i + 1][7 % offset - 3 + 1])
+          continue
+        else
+          break
       }
     }
+  }
+
+  // Now that all 6 sides of the central piece have been checked (and the loop hasn't broken) we start checking the boundary pieces
+  MASSIVE IF/ELSE STATEMENT GOES HERE
+  if(pieces[1][3] == pieces[0][0] && pieces[1][4] == pieces[6][2] && pieces[1][2] == pieces[2][4]) {
+    continue
+  } else if(...) {
+    continue
+  .
+  .
+  .
+  } else {
+    break
   }
 }
